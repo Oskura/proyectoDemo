@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medidas</title>
+    <style>
+        html{
+            font-size: 62.5%;
+            /*Se operaron el 100%, los 16px (lo que equivale a 1rem) y
+            los 10px (unidad que facilita la operación de los font-size)
+            para que fuera más facil transformar los rem en pixeles, por
+            lo que después de la operación de 100% x 10px= 1000, dividido
+            16px, conseguimos los 62.5%*/
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            background: salmon;
+        }
+
+        p{
+            font-size: 1.2rem;
+        }
+
+        .container{
+            width: 100px;
+            height: 100vh;
+            background: sandybrown;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div></div>
+    <p>Master</p>
+    <div class="container"></div>
+</body>
+</html>
