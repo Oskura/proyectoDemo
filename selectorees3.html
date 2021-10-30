@@ -6,12 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        p:hover{
+        p{
+            color: salmon;
+        }
 
+        p::first-letter{
+            color: teal;
+        }
+
+        p::before{
+            content: "😊";
+        }
+        p:hover::before{
+            content: "😎";
+        }
+
+        div p:nth-child(2):hover{
+            color: violet;
+        }
+
+        ::placeholder{
+            color: yellow;
+        }
+
+        input:in-range{
+            background-color: teal;
+        }
+
+        input:out-of-range{
+            background-color: tomato;
+        }
+
+        input:in-range + p::after{
+            content: '👍 Inuficientes';
+        }
+
+        input:out-of-range + p::after{
+            content: '😢 Suficientes'
+        }
+
+        button{
+            color: red;
         }
     </style>
 </head>
 <body>
     <p>Hola</p>
+    <div>
+        <p>Platzi</p> 
+        <p>Master</p>
+        <p>Lo mejor</p>
+    </div>
+
+    <label for="apples">¿Tienes suficientes manzanas para el pure?</label>
+    <input type="number" name="apples" id="apples" min="10" placeholder="numero">
+    <p>
+        Tienes:
+    </p>
+
+    <button>Submit</button>
+
 </body>
 </html>
